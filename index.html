@@ -5,33 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Web Agency</title>
 </head>
 <body>
 
-<div class="h-[500px]  bg-gradient-to-r from-blue-700 to-cyan-400 p-4 ">
-
-    <nav class="flex justify-between font-mono ">
-        <div >
-            <h1 class="space-x-2 text-xl text-white">CompanyName</h1>
-        </div>
-        <div class="space-x-2 text-xl text-white ">
-            <a class="hover:text-black" href="">About Us</a>
-            <a class="hover:text-black" href="">Pricing</a>
-            <a class="hover:text-black " href="">Our Team</a>
-            <a class=" hover:text-black rounded bg-blue-900 p-1 " href="">Contact</a>
-        </div>
-    </nav>
-
-
-    <div class="flex justify-center items-center w-full ">
-        <p class=" text-[20px] font-serif p-[80px] ">PixelForge - Web Development Experts <br>At PixelForge we craft custom, high-performance websites that drive results. From responsive designs to seamless user experiences, our team specializes in creating tailored web solutions for businesses of all sizes. Whether it’s web development, e-commerce, or CMS integration, we deliver modern, scalable websites that help your brand grow online.</p>
-        <img class="mt-[30px] h-[340px] w-[500px] " src="/src/Banner.png" alt="">
+<nav class="flex justify-between font-mono bg-sky-800 text-white px-6 py-4 ">
+    <div >
+        <h1 class="space-x-2 text-xl text-white">CompanyName</h1>
     </div>
-</div>
+    <div class="space-x-2 text-xl text-white ">
+        <a class="hover:text-black" href="">About Us</a>
+        <a class="hover:text-black" href="">Pricing</a>
+        <a class="hover:text-black " href="">Our Team</a>
+        <a class=" hover:text-black rounded bg-blue-900 p-1 " href="">Contact</a>
+    </div>
+</nav>
+
+<div class="h-[500px]   p-4 ">
+    <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+            <img
+                    src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+                    class="w-full" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+            <img
+                    src="/src/banner1.png"
+                    class="w-full" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+            <img
+                    src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+                    class="w-full" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+            <img
+                    src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+                    class="w-full" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+        </div>
+    </div>
 
 
-<div class="bg-gradient-to-b from-slate-400 to-gray-300 h-auto">
+
+    <div class="min-h-[500px] bg-gradient-to-r from-blue-700 to-cyan-400 pt-4" style="background: linear-gradient(to bottom, #81818a, #ffffff) !important;">
+
+
     <h1 class="pt-[20px] font-mono font-semibold text-[17px] text-center">Trusted by the best clients</h1>
 
     <div class="mt-[20px] flex justify-center items-center w-full space-x-9 ">
@@ -77,21 +113,69 @@
 </div>
 
 
-<div class="h-[500px]  bg-gradient-to-r from-blue-700 to-cyan-400 pt-4 ">
+    <div class="min-h-[500px] bg-gradient-to-r from-blue-700 to-cyan-400 pt-4" style="background: linear-gradient(to right, #1e3a8a, #06b6d4) !important;">
+
     <h1 class="font-mono font-semibold text-[17px] text-center pt-[20px]">How We Work</h1>
     <p class="mt-[40px] pl-[200px] pr-[200px] text-center item-center text-[30px]">
         We <span class="text-cyan-200">collaborate closely with clients</span> to understand their needs and goals. Our team designs and develops tailored web solutions with a focus on quality and user experience. We deliver results on time, ensuring continuous support and improvement.
     </p>
 
-    <div class="grid grid-cols-3  justify-center items-center pt-[50px] pb-[25px]  ">
-        <div class="bg-gradient-to-b from-slate-400 to-teal-700 ">
-            <h1>Basic</h1>
-            <p>Includes a custom responsive website design, 1-4 pages (Home, About Us, Services, Contact), basic SEO optimization, a contact form, and CMS integration (e.g., WordPress). It also offers social media integration, Google Analytics setup, mobile responsiveness, and basic security (SSL).</p>
+    <div class="grid grid-cols-3 font-bold space-x-[50px] pt-[50px] pb-[25px] mr-[50px]  ml-[50px]">
+        <div class="bg-gradient-to-b from-slate-400 to-teal-700 justify-center text-center items-center p-[25px] bg-white  rounded-lg ">
+            <h1 class="text-red-600 text-center">Basic</h1> <br>
+
+            <p> <span class="text-black font-extrabold text-[25px]">$1,200</span> <span class="font-normal">/month </span>
+                <br><br>Includes a custom responsive website design, 1-4 pages (Home, About Us, Services, Contact), basic SEO optimization, a contact form, and CMS integration (e.g., WordPress). It also offers social media integration, Google Analytics setup, mobile responsiveness, and basic security (SSL)</p>
+
+        </div>
+
+        <div class="bg-gradient-to-b from-slate-400 to-teal-700 justify-center text-center items-center p-[25px] bg-white  rounded-lg ">
+            <h1 class="text-red-600 text-center">Pro</h1> <br>
+
+            <p> <span class="text-black font-extrabold text-[25px]">$2,500</span> <span class="font-normal">/month </span>
+                <br><br>includes a custom responsive website with 1-10 pages (Home, About, Services, Blog, Contact), basic SEO, e-commerce integration, a contact form, Google Analytics setup, mobile optimization, and basic security (SSL). Ongoing support and CMS integration (e.g., WordPress) are also included</p>
+
+        </div>
+
+        <div class="bg-gradient-to-b from-slate-400 to-teal-700 justify-center text-center items-center p-[25px] bg-white  rounded-lg ">
+            <h1 class="text-red-600 text-center">Enterprise</h1> <br>
+
+            <p> <span class="text-black font-extrabold text-[25px]">$5,000</span> <span class="font-normal">/month </span>
+                <br><br>offers fully custom design with unlimited pages, API integrations, advanced e-commerce, cloud hosting, enterprise-level security (DDoS protection, MFA), and advanced performance optimization. Custom analytics and reporting are included </p>
 
         </div>
 
     </div>
 
+</div>
+
+
+
+    <div class="min-h-[500px] bg-gradient-to-b from-gray-500 to-white pt-4">
+        <h1 class="text-center font-bold text-2xl pt-5">Meet Our Team</h1>
+
+        <div class="grid grid-cols-3 gap-4 font-bold pt-10 pb-6 text-center">
+            <div class="flex flex-col items-center">
+                <img class="h-[230px] rounded" src="/src/team1.jpg" alt="Team Member 1">
+                <p class="mt-2">Imran Hasan Tanvir <br>Junior Frontend Developer</p>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <img class="h-[230px] rounded" src="/src/team2.jpg" alt="Sadekul Islam Jesan">
+                <p class="mt-2">Sadekul Islam Jesan <br>Frontend Developer</p>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <img class="h-[230px] rounded" src="/src/team3.jpg" alt="Team Member 3">
+                <p class="mt-2">Rakinul Alam Khan <br>Sleep Debugger</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    </div>
 </div>
 
 
