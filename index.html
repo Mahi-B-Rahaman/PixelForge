@@ -11,14 +11,15 @@
 </head>
 <body>
 
-<nav class="flex justify-between font-mono bg-sky-800 text-white px-6 py-4 ">
-    <div >
-        <h1 class="space-x-2 text-xl text-white">CompanyName</h1>
+<nav class="flex justify-between font-mono bg-gray-900 text-white px-6 py-4 ">
+    <div class="flex">
+        <h1 class="space-x-2 text-xl text-white">Pixel Forge</h1>
+        <img class="h-[30px] " src="/src/logo.png" alt="">
     </div>
     <div class="space-x-2 text-xl text-white ">
         <a class="hover:text-black" href="">About Us</a>
-        <a class="hover:text-black" href="">Pricing</a>
-        <a class="hover:text-black " href="">Our Team</a>
+        <a class="hover:text-black" href="#pricing">Pricing</a>
+        <a class="hover:text-black " href="#our-team">Our Team</a>
         <a class=" hover:text-black rounded bg-blue-900 p-1 " href="">Contact</a>
     </div>
 </nav>
@@ -27,7 +28,7 @@
     <div class="carousel w-full">
         <div id="slide1" class="carousel-item relative w-full">
             <img
-                    src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+                    src="/src/banner1.png"
                     class="w-full" />
             <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                 <a href="#slide4" class="btn btn-circle">❮</a>
@@ -36,7 +37,7 @@
         </div>
         <div id="slide2" class="carousel-item relative w-full">
             <img
-                    src="/src/banner1.png"
+                    src="/src/support.jpg"
                     class="w-full" />
             <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                 <a href="#slide1" class="btn btn-circle">❮</a>
@@ -45,21 +46,14 @@
         </div>
         <div id="slide3" class="carousel-item relative w-full">
             <img
-                    src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+                    src="/src/scale.jpg"
                     class="w-full" />
             <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                 <a href="#slide2" class="btn btn-circle">❮</a>
                 <a href="#slide4" class="btn btn-circle">❯</a>
             </div>
         </div>
-        <div id="slide4" class="carousel-item relative w-full">
-            <img
-                    src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
-                    class="w-full" />
-            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                <a href="#slide3" class="btn btn-circle">❮</a>
-                <a href="#slide1" class="btn btn-circle">❯</a>
-            </div>
+
         </div>
     </div>
 
@@ -112,14 +106,15 @@
     </div>
 </div>
 
+<!-- how we work section-->
 
-    <div class="min-h-[500px] bg-gradient-to-r from-blue-700 to-cyan-400 pt-4" style="background: linear-gradient(to right, #1e3a8a, #06b6d4) !important;">
+    <div id="pricing" class="min-h-[500px] bg-gradient-to-r from-blue-700 to-cyan-400 pt-4" style="background: linear-gradient(to right, #1e3a8a, #06b6d4) !important;">
 
     <h1 class="font-mono font-semibold text-[17px] text-center pt-[20px]">How We Work</h1>
     <p class="mt-[40px] pl-[200px] pr-[200px] text-center item-center text-[30px]">
         We <span class="text-cyan-200">collaborate closely with clients</span> to understand their needs and goals. Our team designs and develops tailored web solutions with a focus on quality and user experience. We deliver results on time, ensuring continuous support and improvement.
     </p>
-
+<!--basic service-->
     <div class="grid grid-cols-3 font-bold space-x-[50px] pt-[50px] pb-[25px] mr-[50px]  ml-[50px]">
         <div class="bg-gradient-to-b from-slate-400 to-teal-700 justify-center text-center items-center p-[25px] bg-white  rounded-lg ">
             <h1 class="text-red-600 text-center">Basic</h1> <br>
@@ -128,7 +123,7 @@
                 <br><br>Includes a custom responsive website design, 1-4 pages (Home, About Us, Services, Contact), basic SEO optimization, a contact form, and CMS integration (e.g., WordPress). It also offers social media integration, Google Analytics setup, mobile responsiveness, and basic security (SSL)</p>
 
         </div>
-
+<!--pro service-->
         <div class="bg-gradient-to-b from-slate-400 to-teal-700 justify-center text-center items-center p-[25px] bg-white  rounded-lg ">
             <h1 class="text-red-600 text-center">Pro</h1> <br>
 
@@ -136,7 +131,7 @@
                 <br><br>includes a custom responsive website with 1-10 pages (Home, About, Services, Blog, Contact), basic SEO, e-commerce integration, a contact form, Google Analytics setup, mobile optimization, and basic security (SSL). Ongoing support and CMS integration (e.g., WordPress) are also included</p>
 
         </div>
-
+<!--Enterprise service-->
         <div class="bg-gradient-to-b from-slate-400 to-teal-700 justify-center text-center items-center p-[25px] bg-white  rounded-lg ">
             <h1 class="text-red-600 text-center">Enterprise</h1> <br>
 
@@ -152,32 +147,69 @@
 
 
     <div class="min-h-[500px] bg-gradient-to-b from-gray-500 to-white pt-4">
-        <h1 class="text-center font-bold text-2xl pt-5">Meet Our Team</h1>
+        <h1 id="our-team" class="text-center font-bold text-2xl pt-5">Meet Our Team</h1>
 
-        <div class="grid grid-cols-3 gap-4 font-bold pt-10 pb-6 text-center">
-            <div class="flex flex-col items-center">
+        <div class="grid grid-cols-3 gap-4 font-bold pt-10 pb-6 text-center ">
+            <div class="flex flex-col items-center hover:scale-105 transition-transform duration-500">
                 <img class="h-[230px] rounded" src="/src/team1.jpg" alt="Team Member 1">
-                <p class="mt-2">Imran Hasan Tanvir <br>Junior Frontend Developer</p>
+                <p class="mt-2">Imran Hasan Tanvir <br>Backend Developer</p>
             </div>
 
-            <div class="flex flex-col items-center">
-                <img class="h-[230px] rounded" src="/src/team2.jpg" alt="Sadekul Islam Jesan">
+            <div class="flex flex-col items-center hover:scale-105 transition-transform duration-500 ">
+                <img class="h-[230px] rounded  " src="/src/team2.jpg" alt="Sadekul Islam Jesan">
                 <p class="mt-2">Sadekul Islam Jesan <br>Frontend Developer</p>
             </div>
 
-            <div class="flex flex-col items-center">
+            <div class="flex flex-col items-center hover:scale-105 transition-transform duration-500">
                 <img class="h-[230px] rounded" src="/src/team3.jpg" alt="Team Member 3">
-                <p class="mt-2">Rakinul Alam Khan <br>Sleep Debugger</p>
+                <p class="mt-2">Rakinul Alam Khan <br>Dev Ops</p>
             </div>
         </div>
     </div>
 
 
+    <footer id="footer" class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
 
+            <!-- Column 1: Company Info -->
+            <div>
+                <h2 class="text-xl font-bold">CompanyName</h2>
+                <p class="mt-2 text-gray-400">We build innovative web solutions to help businesses grow. Our mission is to create seamless digital experiences.</p>
+            </div>
 
-    </div>
-</div>
+            <!-- Column 2: Links -->
+            <div>
+                <h2 class="text-xl font-bold">Quick Links</h2>
+                <ul class="mt-2 space-y-2">
+                    <li><a href="#" class="hover:text-blue-400">About Us</a></li>
+                    <li><a href="#pricing" class="hover:text-blue-400">Pricing</a></li>
+                    <li><a href="#our-team" class="hover:text-blue-400">Our Team</a></li>
+                    <li><a href="#footer" class="hover:text-blue-400">Contact</a></li>
+                </ul>
+            </div>
 
+            <!-- Column 3: Social Media -->
+            <div>
+                <h2 class="text-xl font-bold">Contact</h2>
+                <p class="mt-2 text-gray-400">CDA 17/1,Agrabad,Chattogram</p>
+                <p class="text-gray-400">Email: ---</p>
+                <p class="text-gray-400">Phone: +880 1888888888</p>
 
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="text-gray-400 hover:text-blue-400 text-2xl"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400 text-2xl"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400 text-2xl"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400 text-2xl"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="text-center mt-6 border-t border-gray-700 pt-4">
+            <p class="text-gray-400">&copy; 2025 CompanyName. All rights reserved.</p>
+        </div>
+
+</footer>
 </body>
 </html>
